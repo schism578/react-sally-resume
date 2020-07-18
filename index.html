@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Student Resume</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="application-root"></div>
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script type="text/babel">
+
+function App(props) {
+  console.log(props)
+  return (
+      <div>
+        <header>
+            <h1><span>{props.children} Resume</span></h1>
+        </header>
+
+        <section>
+          <img src="Sally.jpg" alt="Photo of Sally" />
+          <address>
+          <p>Sally Student</p>
+          <p>Email: <a href="mailto:sally.student@gmail.com?subject=Hello">sally.student@gmail.com</a></p>
+          <p>Phone Number: 800.976.5477</p>
+          </address>
+        </section>
+
+        <section>
+          <header>
+            <h2>Education</h2>
+          </header>
+          <ul>
+            <li>University of Poisons, M.S. in Poison Assemblage, 2014</li>
+            <li>College of Professional Seamstressing, B.A. in Sewing My Body Parts Back On, 2011</li>
+          </ul>
+        </section>
+
+        <section>
+          <header>
+            <h2>Employment History</h2>
+        </header>
+          <div>
+            <h3>Jack's Halloween Shoppe, 2017-Present</h3>
+            <h4>Assistant General Manager</h4>
+            <ul>
+              <lh>Duties:</lh>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+              <li>Vitae congue mauris rhoncus aenean vel</li>
+              <li>Diam sollicitudin tempor id eu nisl nunc mi</li>
+              <li>Viverra maecenas accumsan lacus vel facilisis volutpat est</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Dr. Finklestein's Apothecary, 2014-2017</h3>
+            <h4>Spoon Dropper</h4>
+            <ul>
+              <lh>Duties:</lh>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+              <li>Vitae congue mauris rhoncus aenean vel</li>
+              <li>Diam sollicitudin tempor id eu nisl nunc mi</li>
+              <li>Viverra maecenas accumsan lacus vel facilisis volutpat est</li>
+            </ul>
+          </div>
+        </section>
+        
+        <footer>2020 Sally Student</footer>
+      
+      </div>
+  );
+}
+
+  ReactDOM.render(
+    <App className='my-class'>
+    <span>Sally Student</span>
+  </App>,
+    document.querySelector('#application-root')
+  );
+</script>
+
+</body>
+</html>

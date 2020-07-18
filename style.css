@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Marcellus', serif;
+    color: white;
+    background: url(background.jpg)center center no-repeat fixed;
+    background-size: cover;
+}
+
+img {
+    width: 25%;
+}
+
+a {
+    color: yellow;
+}
+
+a:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+ul {
+    list-style-type: none;
+}
